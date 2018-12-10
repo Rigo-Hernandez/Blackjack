@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blackjack Game</title>
+
+</head>
+<body>
+    <div style="position: relative; border: thick solid red; background-color: green; width: 600px; height:500px">
+        <div style="position: absolute; left:20px; top:15px; color:black; font-size:large"><b>Dealer's cards: </b> </div>
+        <div id="dealer1" style="position: absolute; left: 50px; top:50px;  border: 2px solid tomato;"></div>
+        <div id="dealer2" style="position: absolute; left: 150px; top:50px;  border: 2px solid tomato;"></div>
+        <div id="dealer3" style="position: absolute; left: 250px; top:50px;  border: 2px solid tomato;"></div>
+        <div id="dealer4" style="position: absolute; left: 350px; top:50px;  border: 2px solid tomato;"></div>
+        <div id="dealer5" style="position: absolute; left: 450px; top:50px;  border: 2px solid tomato;"></div>
+        <div style="position: absolute; left:20px; top:210px; color:black; font-size:large"><b> Player's cards: </b></div>
+        <div id="player1" style="position: absolute; left: 50px; top:250px;  border: 2px solid tomato;"></div>
+        <div id="player2" style="position: absolute; left: 150px; top:250px;  border: 2px solid tomato;"></div>
+        <div id="player3" style="position: absolute; left: 250px; top:250px;  border: 2px solid tomato;"></div>
+        <div id="player4" style="position: absolute; left: 350px; top:250px;  border: 2px solid tomato;"></div>
+        <div id="player5" style="position: absolute; left: 450px; top:250px;  border: 2px solid tomato;"></div>
+        </div>
+    </div>
+
+    <div id="table">
+        <div id="messages"></div>
+        <label>Dealer: </label>
+        <label id="dealer-points" class="points" ></label>
+        <div id="dealer-hand" class="hand">
+        </div>
+        <label>Player: </label>
+        <label id="player-points" class="points"></label>
+        <div id="player-hand" class="hand">
+        </div>
+        <div class="buttons">
+        <button id="deal-button">Deal</button>
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+        </div>
+        </div>
+
+
+
+
+
+
+<script src="blackJack.js"></script>
+</body>
+</html>
