@@ -1,3 +1,4 @@
+//Variables
 var suits = ["S", "H","D","C"];
 var value = ["King","Ace","2","3","4","5","6","7","8","9","10","Jack","Queen"]
 var deck = []
