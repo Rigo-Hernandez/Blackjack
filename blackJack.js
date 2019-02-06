@@ -113,12 +113,16 @@ function standCards(){
         dealerHand.append(image1)
         dealerPoints += hcard.points
         dealerPointsDiv.textContent=dealerPoints
-    if (dealerPoints >= playerPoints){
-            message.textContent = ('Dealer Win, You Lose!!')
-    }
-    else if (playerPoints >= dealerPoints){
-        message.textContent = ('Dealer lose, You Win!!')
-    }
+        playerPointsDiv.textContent=playerPoints
+        if (dealerPoints > 21) {
+            message.textContent = "Dealer Busted";
+        } else if (playerPoints > dealerPoints && playerPoints <= 21) {
+            message.textContent = "You Win!";
+        } else if (dealerPoints > playerPoints && dealerPoints <= 21) {
+            message.textContent = "Dealer Wins";
+        } else if (playerPoints == dealerPoints) {
+            message.textContent = "It's a tie!";
+        }
         busted()
         win()
     
